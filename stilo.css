@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Imagenes/Bosque.png);
+}
+
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    text-decoration:underline;
+    font-size: 23px;
+}
+
+
+
+.contiene {
+    
+    font-family: 'Lora', serif;
+    height: auto;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+main section {
+    width: 30%;
+    border: 1px black solid;
+    border-radius: 20px;
+    transition: 0.3s linear;
+}
+
+.card {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.pendientes:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 10px;
+}
+
+.progreso{
+    border-radius: 20px;
+    transition: 0.3s linear;
+   
+}
+.progreso:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 10px;
+}
+
+
+.terminadas{
+    border-radius: 20px;
+    transition: 0.3s linear;
+}
+
+.terminadas:hover{
+    box-shadow: 10px 10px 14px 2px black;
+    border-radius: 10px;
+}
+
+.diseño{
+    font-family: 'Lora', serif;
+    border-radius: 30px;
+    background-color: #899481;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 4rem;
+    color: #efe9e1;
+    margin-left: 120px;
+}
+#delete{
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #efe9e1;
+    background-color:#899481;
+}
+
+#edit{
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #efe9e1;
+    background-color:#899481;
+}
+
+.oscuro{
+    background-image: url(Imagenes/oscuro.png); 
+    transition-duration:0.5s;
+    color: #969ba5;
+    
+   
+   }
+
+
+   

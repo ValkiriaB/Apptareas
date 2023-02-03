@@ -9,14 +9,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Taviraj', serif;
     text-decoration:underline;
-    font-size: 23px;
+    margin-right: 4rem;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 
 
-.contiene {
+.contenedor{
     
     font-family: 'Lora', serif;
     height: auto;
@@ -25,30 +27,30 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 80px;
-}
+ }
 
-main section {
+ main section {
     width: 30%;
     border: 1px black solid;
     border-radius: 20px;
     transition: 0.3s linear;
-}
+ }
 
-.card {
+ .card {
     
     display: flex;
     align-items: center;
     justify-content: space-around;
     
-}
+ }
 
 .pendientes:hover{
     box-shadow: 10px 10px 14px 2px black;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .card:hover{
     box-shadow: 10px 10px 14px 2px black;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .progreso{
@@ -58,7 +60,7 @@ main section {
 }
 .progreso:hover{
     box-shadow: 10px 10px 14px 2px black;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
@@ -69,7 +71,7 @@ main section {
 
 .terminadas:hover{
     box-shadow: 10px 10px 14px 2px black;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .diseño{
@@ -83,7 +85,7 @@ main section {
     color: #efe9e1;
     margin-left: 120px;
 }
-#delete{
+.delete{
     border: none;
     cursor: pointer;
     padding: 5px 10px;
@@ -92,7 +94,7 @@ main section {
     background-color:#899481;
 }
 
-#edit{
+.edit{
     border: none;
     cursor: pointer;
     padding: 5px 10px;
@@ -109,5 +111,78 @@ main section {
    
    }
 
-
+   .contain-modalCreate , .contain-modalEdit{
+  
+    
    
+    margin-top: 100px;
+    height: 70%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    justify-content:space-around;
+    align-items: center;
+    top: 0;
+    left: 0;         
+    background-color: #99a0a8; 
+    
+
+}
+
+.form {
+    display:grid;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
+
+.show-modal {
+    display:flex;
+}
+
+.show-modalEdit{
+    display: flex;
+}
+
+#create-modal{
+    border-radius: 20px;
+    margin-top: 2rem;
+    background-color: #899481;
+    font-family: 'Lora', serif;
+    color:#efe9e1;
+    margin-left: 2rem;
+    border: none;
+    padding: 5px;
+   cursor: pointer;
+   
+}
+
+#close-modal, #close-modalEdit{
+    border-radius: 10px;
+    color: white;
+    border-style:hidden;
+    background-color: #022534;
+    cursor: pointer;
+}
+   .crearTarea{
+    display: flex;  
+    justify-content: center;
+    align-items:stretch;
+    margin-right: 6rem;
+   }
+
+   .submit{
+    border-radius: 10px;
+    color: white;
+    border-style:hidden;
+    background-color: #022534;
+    cursor: pointer;
+   }
+
+   #state,#stateEdit, input{
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin: 20px;
+}

@@ -17,13 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital@1&display=swap" rel="stylesheet">
 
-
-
-
-
-
-
-
     <title>App de Tareas</title>
 </head>
 
@@ -43,7 +36,7 @@
             <div class="contain-modalCreate">
 
                 <form class="form">
-                    <button id="close-modal">X</button>
+                    <button type="button" id="close-modal">X</button>
                     <div>
                         <input id="title" type="text" placeholder="Titulo de la tarea">
                         <span id="titleErrors"></span>
@@ -71,11 +64,11 @@
 
     <section class="contain-modalEdit">
         <div class="modal">
-            <form class="form">
+            <form class="formulario">
                 <button type="button" id="close-modalEdit">X</button>
                 <div>
                     <input id="titleEdit" type="text" placeholder="Titulo de tarea">
-                    <span id="titleErrors"></span>
+                    <span id="EditError"></span>
                 </div>
                 <div>
                     <select id="stateEdit">
@@ -84,9 +77,9 @@
                         <option value="En progreso">En progreso</option>
                         <option value="Terminado">Terminado</option>
                     </select>
-                    <span id="stateErrors"></span>       
+                    <span id="stateEditErrors"></span>       
                 </div>
-                <button type="submit" class="submit">Editar</button>
+                <button type="submit" class="submit">Editar Tarea</button>
             </form>
             <span id="formErrors"></span>
         </div>
